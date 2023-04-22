@@ -1,5 +1,4 @@
 <?php
-    
     if(isset($_POST['submit']))
     {
         include_once('config.php');
@@ -12,13 +11,8 @@
         $genero = $_POST['genero'];
 
         $result = mysqli_query($conexao, "INSERT INTO usuarios(nome,email,tel,cidade,data_nasc,genero)VALUES ('$nome','$email','$tel','$cidade','$data_nasc','$genero')");
-
     }
-
 ?>
-
-
-
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
